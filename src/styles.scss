@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.beer {
+    &__image {
+        width: 75%;
+        height: 400px;
+        background-position: center;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+
+    &__card {
+        width: 100%;
+        &--image {
+            width: 100%;
+            height: 180px;
+            background-position: center;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+        }
+        &--header {
+            height: 70px;
+            font-size: 12px;
+        }
+        &--name {
+            height: 50px;
+        }
+        &--description {
+            font-size: 10px;
+        }
+    }
+}

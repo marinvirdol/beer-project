@@ -1,0 +1,13 @@
+<nav class="navbar fixed-top navbar-light bg-light pr-5">
+  <a class="navbar-brand" href="#">
+    <img
+      src="https://thumb1.shutterstock.com/display_pic_with_logo/2778799/760485283/stock-photo-glasses-of-light-and-dark-beer-on-a-pub-background-760485283.jpg"
+      width="200" height="70"
+      class="d-inline-block align-top">
+  </a>
+  <form class="form-inline" [formGroup]="searchForm" novalidate *ngIf="searchFormVisible">
+    <input
+      formControlName="searchText"
+      class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  </form>
+</nav>
